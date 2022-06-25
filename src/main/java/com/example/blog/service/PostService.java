@@ -22,7 +22,7 @@ public class PostService {
         Post post = new Post();
         post.setTitle(postRequest.getTitle());
         post.setContent(postRequest.getContent());
-        post.setImage(post.getImage());
+        post.setImage(postRequest.getImage());
         postRepository.save(post);
     }
 
@@ -31,7 +31,7 @@ public class PostService {
         post.setId(postRequest.getId());
         post.setTitle(postRequest.getTitle());
         post.setContent(postRequest.getContent());
-        post.setImage(post.getImage());
+        post.setImage(postRequest.getImage());
         postRepository.save(post);
 
     }

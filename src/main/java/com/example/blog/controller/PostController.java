@@ -33,12 +33,12 @@ public class PostController {
         return new ResponseEntity(HttpStatus.OK);
     }
 
-    @GetMapping("/post/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Post> get(@PathVariable Long id) {
         return new ResponseEntity( postService.getPost(id), HttpStatus.OK);
     }
 
-    @DeleteMapping("/post/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity delete(@PathVariable Long id) {
         postService.delete(id);
         return new ResponseEntity(HttpStatus.OK);
